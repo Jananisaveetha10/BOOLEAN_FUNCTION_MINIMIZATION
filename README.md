@@ -35,29 +35,41 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 ```
-Developed by:janani S
-RegisterNumber:24900080*/
+module exp_2a (a,b,c,d,f1);
+input (a,b,c,d);
+output (f1);
+assign f1=((~a&b&d)|(a&b&~c)|(~b& ~d));
+endmodule
 ```
 ```
-module exp2(f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor,a,b);
-input a,b;
-output f_and,f_or,f_nor,f_not,f_nand,f_xor,f_xnor;
-and(f_and,a,b);
-or(f_or,a,b);
-not(f_not,a);
-nor(f_nor,a,b);
-nand(f_nand,a,b);
-xor(f_xor,a,b);
-xnor(f_xnor,a,b);
+module exp_2b(w,x,y,z,f2);
+input(w,x,y,z);
+output f2;
+assign f2=((x&y)|(~w&y)|(~y&z));
 endmodule
 ```
 
 
+
 **Output:**
-![image](https://github.com/user-attachments/assets/7d3a4ec3-d97c-4370-b0c7-98130b6adffb)
+![Screenshot 2025-05-14 215440](https://github.com/user-attachments/assets/3efa9bd8-ab46-4913-be7b-06697f69d29e)
+
+![Screenshot 2025-05-14 215255](https://github.com/user-attachments/assets/9b73d0bb-5ff9-4924-a33b-7ee4e216bf7d)
+
+
+
+
 
 **Timing Diagram**
-![image](https://github.com/user-attachments/assets/acfafcff-a1f7-4880-b9ae-6321ff78e93a)
+![Screenshot 2025-05-14 215557](https://github.com/user-attachments/assets/faeec3b4-0a49-4c7f-a2f2-2dc1d357e73d)
+![Screenshot 2025-05-14 215725](https://github.com/user-attachments/assets/5d3ca894-b2c3-4629-8138-5da88885128f)
+
+
+Name:JANANI S
+Register number:212224040127
+
+
+
 
 
 **Result:**
